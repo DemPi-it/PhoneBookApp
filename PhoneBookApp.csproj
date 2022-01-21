@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
+  </ItemGroup>
+
 </Project>
