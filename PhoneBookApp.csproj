@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net472</TargetFramework>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
+    <None Remove="Profile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
+    <Resource Include="Profile.png" />
   </ItemGroup>
 
 </Project>

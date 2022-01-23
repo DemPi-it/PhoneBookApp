@@ -44,7 +44,8 @@ namespace PhoneBookApp
 
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ProfileWindow profileWindow = new ProfileWindow();
+            profileWindow.Show();
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
