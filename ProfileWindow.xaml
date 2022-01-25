@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhoneBookApp"
         mc:Ignorable="d"
-        Title="Profile" Height="240" Width="400" Icon="/Profile.png">
+        Title="Profile" Height="240" Width="400" Icon="/Profile.png" Background="{Binding ColorSet}">
     <Grid Loaded="Grid_Loaded">
         <Image x:Name="ProfileLogo" Source="C:\Users\Kirill\Desktop\Проект WPF\Icons\Profile.png" Width="120" Height="120" Margin="48,-50,0,0" Grid.RowSpan="2" HorizontalAlignment="Left"/>
         <TextBlock Text="Username:" Grid.Column="1" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="-20,16,0,0"/>

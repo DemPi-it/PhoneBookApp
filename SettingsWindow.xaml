@@ -1,0 +1,29 @@
+﻿<Window x:Class="PhoneBookApp.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneBookApp"
+        mc:Ignorable="d"
+        Title="Settings" Height="240" Width="400" Icon="/Settings.png">
+    <Grid>
+        <Image Source="C:\Users\Kirill\Desktop\Проект WPF\Icons\Settings.png" Width="97" Height="97" Grid.RowSpan="2" Margin="28,-60,0,0"/>
+        <TextBlock Text="BackGround" Grid.Column="1" VerticalAlignment="Center" Margin="20,-20,0,0" FontSize="24" Loaded="TextBlock_Loaded"/>
+        <TextBlock Text="Color" Grid.Column="1" VerticalAlignment="Center" Margin="60,25,0,0" FontSize="24"/>
+        <ComboBox Name="ColorsBox" Grid.Column="1" Height="24" Width="140" Margin="-15,80,0,0" SelectionChanged="ColorsBox_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

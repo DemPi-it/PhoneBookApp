@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Remove="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
     <None Remove="Profile.png" />
+    <None Remove="Settings.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
   <ItemGroup>
     <Resource Include="phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" />
     <Resource Include="Profile.png" />
+    <Resource Include="Settings.png" />
   </ItemGroup>
 
 </Project>

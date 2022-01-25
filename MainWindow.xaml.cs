@@ -22,6 +22,7 @@ namespace PhoneBookApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainWindow mw;
         public MainWindow()
         {
             InitializeComponent();
@@ -50,8 +51,11 @@ namespace PhoneBookApp
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            SettingsWindow settingsWindow = new SettingsWindow();
+            settingsWindow.Show();
         }
+
+        
     }
 
 }
